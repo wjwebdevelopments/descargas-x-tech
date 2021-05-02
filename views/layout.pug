@@ -1,0 +1,64 @@
+doctype
+html
+  head
+    title DescargasXTech
+    link(href="/public/dist/bundle.css" rel="stylesheet" type="text/css")
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" type="text/css")
+  body
+  
+    .header
+      .header__navbar
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+          .container
+            a.navbar-brand.mr-auto(href="/")  DescargasXTech 
+            form.form-inline.my-2.my-lg-0
+              input.form-control.mr-sm-2(type="search" placeholder="Buscar en DescargasXTech")
+              button.btn.btn-secondary.my-2.my-sm-0(type="submit") Buscar
+            .icons.ml-5
+              i.icofont.icofont-game-controller.icofont-2x
+              i.icofont.icofont-movie.icofont-2x.mx-3
+              i.icofont.icofont-ui-video.icofont-2x
+        
+      .header__banner.mt-3
+        .container
+          p.banner__title DescargasXTech
+          span.banner__subtitle Peliculas, Juegos, Series y Mucho Más
+      .header__nav.mt-3
+        .container
+          nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+            .collapse.navbar-collapse
+              ul.navbar-nav.mr-auto
+                li.nav-item
+                  a.nav-link(href="#") 
+                    i.icofont.icofont-ui-home
+                li.nav-item
+                  a.nav-link(href="#") 
+                    i.icofont.icofont-game-controller.mr-1
+                    | Juegos PC
+                li.nav-item
+                  a.nav-link(href="#") 
+                    i.icofont.icofont-movie.mr-1
+                    | Peliculas
+                li.nav-item
+                  a.nav-link(href="#") 
+                    i.icofont.icofont-ui-video.mr-1
+                    | Series
+                li.nav-item
+                  a.nav-link(href="#") 
+                    i.icofont.icofont-brand-appstore.mr-1
+                    | Aplicaciones
+                li.nav-item
+                  a.nav-link(href="#") 
+                    i.icofont.icofont-brand-windows.mr-1
+                    | Programas
+              .login
+                ul.navbar-nav
+                  li.nav-item
+                    a.nav-link(href="/login") 
+                      i.icofont.icofont-key.mr-1
+                      | Iniciar Sesión
+    .container.mt-3
+      block content
+      
+      
+      script(src="/public/dist/bundle.min.js")

@@ -1,0 +1,19 @@
+.header__navbar {
+
+  .navbar-brand {
+    @include title {
+      font-size: 26px;
+    }
+  }
+
+  .icons {
+    .icofont {
+      color: $light;
+      &:hover {
+        color: $warning;
+        cursor: pointer;
+      }
+    }
+  }
+
+}

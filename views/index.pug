@@ -1,0 +1,20 @@
+extends layout
+block content
+
+  include ./componentes/tarjeta-pelicula 
+
+  section.terjetas-de-peliculas#peliculas-tarjetas
+    .row.mb-3
+      .col-3
+        a(href="#")
+          +tarjetaPelicula
+      .col-3
+        a(href="#")
+          +tarjetaPelicula
+      .col-3
+        a(href="#")
+          +tarjetaPelicula
+
+  .contenido.row
+    .col
+      h1 Bienvenidos a DescargasXTech

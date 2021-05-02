@@ -1,0 +1,4 @@
+@mixin title {
+  font-family: 'Freckle Face', cursive;
+  @content
+}

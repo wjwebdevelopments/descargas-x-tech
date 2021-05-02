@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "Skylines (2020) HD 1080p y 720p Latino 5.1 Dual",
+    "cortaDescripcion": "Película francesa de ciencia ficción titulada: Skylines (2020) HD 1080p y 720p, aunque también se le conoce como Skylines 3, en ella veremos como un virus amenaza en transformar a los híbridos alienígenas amistosos que actualmente viven en la Tierra en una amenaza real para los seres humanos.",
+    "imagenUrl": "https://www.compucalitv.com/wp-content/uploads/2020/12/Skylines-2020-HD-1080p-720p-portada.jpg",
+    "fichaTecnica": {
+        "tituloOriginal": "Skylines (2020)",
+        "fechaDeEstreno": "25 de Octubre de 2020",
+        "duracion": 110,
+        "pais": "Francia",
+        "director": "Liam O’Donnell",
+        "actores": ["Lindsey Morgan", "Rhona Mitra", "James Cosmo", "Alexander Siddig", "Daniel Bernhardt", "Yayan Ruhian"],
+        "genero": ["Ciencia ficción", "Acción", "Aventuras"],
+        "tematicas": "Extraterrestres"
+      },
+    "largaDescripcion": "Cuando un virus amenaza con convertir a los híbridos alienígenas amistosos que ahora habitan en la Tierra contra los humanos, la capitana Rose Corley debe liderar un equipo de mercenarios de élite en una misión al mundo alienígena para salvar lo que queda de la humanidad.",
+    "descarga": {
+      "720p": {
+        "peso": "924MB",
+        "formato": "MKV",
+        "codec": "x264",
+        "videoBitRate": "884 KB/S",
+        "audioPrincipal": "Español Latino AAC 2.0",
+        "audioSecundario": "Ingles AAC 2.0",
+        "resolucion": "1280 x 544",
+        "subtitulos": "Forzados, Español e Ingles (SRT)",
+        "duracion": "1 Hora con 53 Minutos y 37 Segundos",
+        "link": "https://compul.in/#aHR0cHM6Ly92Mi5jb21wdXBhc3RlLmNvbS8/dj1rZFA="
+      }
+    }
+  }
+]

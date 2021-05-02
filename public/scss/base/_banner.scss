@@ -1,0 +1,28 @@
+.header__banner {
+
+  .container {
+    // background-color: $gray;
+    background-image: url(../img/banner/banner-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: center;
+    padding: 0 40px;
+
+    .banner__title {
+      @include title {
+        font-size: 56px;
+        margin-bottom: 0;
+        color: $light;
+      }
+    }
+    .banner__subtitle {
+      font-weight: $bold;
+      font-family: 'Nunito', sans-serif;
+      color: $light;
+    }
+  }
+}
