@@ -1,10 +1,14 @@
 body {
-  background-color: #1b1717;/*#1a1c20*/;
+  background-color: #eeebdd;/*#1a1c20*/;
 
   .contenido {
     background-color: $light;
     border-radius: 10px;
   }
+}
+
+.text-rojo {
+  color: $rojo-100;
 }
 
 .br-1 {
@@ -17,4 +21,24 @@ body {
 
 .hidden {
   display: none;
+}
+
+.bg-custom-100 {
+  background-color: $rojo-100;
+}
+
+.bg-custom-50 {
+  background-color: $rojo-50;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: $rojo-50;
+    border-color: $rojo-100;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: $rojo-100;
+    border-color:$rojo-100;
 }

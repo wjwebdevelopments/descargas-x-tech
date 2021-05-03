@@ -1,0 +1,50 @@
+extend layout
+block content
+  
+  .row
+    form.col-12
+      .row
+        .col-6
+          h3 Datos generales
+          .form-group
+            label(for="titulo") Titulo
+            input.form-control(type="text" name="titulo")
+          .form-group
+            label(for="corta-descriptcion") Breve descriptción
+            input.form-control(type="text" name="corta-descriptcion")
+        .col-6
+          h3 Ficha técnica
+          .form-group
+            label(for="titulo-original") Titulo original
+            input.form-control(type="text" name="titulo-original")
+          .form-group
+            label(for="fecha-estreno") Fecha de estreno
+            input.form-control(type="text" name="fecha-estreno")
+          .row
+            .col-6
+              .form-group
+                label(for="duracion") Duracion
+                input.form-control(type="number" name="duracion")
+            .col-6
+              .form-group
+                label(for="pais") Duracion
+                select.form-control(name="pais")
+                  option Republica Dominicana
+                  option Estados Unidos
+                  option Francia
+                  option Inglaterra
+            .col-6
+              .form-group
+                label(for="director") Director
+                input.form-control(type="text" name="director")
+            .col-6
+              .form-group.d-flex.align-items-end
+                .input-actores
+                  label(for="actores") Actores
+                  input.form-control(type="text" name="actores")
+                button(style="height: 37px") 
+                  i.icofont.icofont-plus
+              
+                
+        
+    

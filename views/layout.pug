@@ -8,7 +8,7 @@ html
   
     .header
       .header__navbar
-        nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-custom-50
           .container
             a.navbar-brand.mr-auto(href="/")  DescargasXTech 
             form.form-inline.my-2.my-lg-0
@@ -25,11 +25,11 @@ html
           span.banner__subtitle Peliculas, Juegos, Series y Mucho Más
       .header__nav.mt-3
         .container
-          nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+          nav.navbar.navbar-expand-lg.navbar-dark.bg-custom-50
             .collapse.navbar-collapse
               ul.navbar-nav.mr-auto
                 li.nav-item
-                  a.nav-link(href="#") 
+                  a.nav-link(href="/") 
                     i.icofont.icofont-ui-home
                 li.nav-item
                   a.nav-link(href="#") 
@@ -54,9 +54,14 @@ html
               .login
                 ul.navbar-nav
                   li.nav-item
+                    a.nav-link(href="/agregar-archivos") 
+                      i.icofont.icofont-plus.mr-1
+                      | Agregar archivo
+                  li.nav-item
                     a.nav-link(href="/login") 
                       i.icofont.icofont-key.mr-1
                       | Iniciar Sesión
+                      
     .container.mt-3
       block content
       

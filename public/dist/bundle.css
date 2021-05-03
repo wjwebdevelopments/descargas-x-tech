@@ -14443,11 +14443,14 @@ body {
   width: auto; }
 
 body {
-  background-color: #1b1717;
+  background-color: #eeebdd;
   /*#1a1c20*/ }
   body .contenido {
     background-color: #f8f9fa;
     border-radius: 10px; }
+
+.text-rojo {
+  color: #810000; }
 
 .br-1 {
   border-radius: 10px; }
@@ -14457,6 +14460,22 @@ body {
 
 .hidden {
   display: none; }
+
+.bg-custom-100 {
+  background-color: #810000; }
+
+.bg-custom-50 {
+  background-color: #ce1212; }
+
+.btn-danger {
+  color: #fff;
+  background-color: #ce1212;
+  border-color: #810000; }
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #810000;
+  border-color: #810000; }
 
 .header__navbar .navbar-brand {
   font-family: 'Freckle Face', cursive;
@@ -14502,6 +14521,7 @@ body {
     background-color: rgba(248, 249, 250, 0.72);
     border-top: none;
     height: 100%;
+    cursor: pointer;
     flex-direction: column;
     justify-content: space-around; }
     .terjetas-de-peliculas .card .card-footer .card-title, .terjetas-de-peliculas .card .card-footer .etiqueta {

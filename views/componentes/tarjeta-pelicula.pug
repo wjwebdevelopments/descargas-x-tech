@@ -1,17 +1,19 @@
-mixin tarjetaPelicula(pelicula)
-  .card
-    .card-body
-      img.w-100(src="https://www.compucalitv.com/wp-content/uploads/2020/12/Skylines-2020-HD-1080p-720p-portada.jpg" alt="Imagen Peliculas")
-    .card-footer.hidden
-      .card-title Skylines (2020) HD 1080p y 720p Latino 5.1 Dual
-      p Película francesa de ciencia ficción titulada: Skylines (2020) HD 1080p y 720p, aunque también se le conoce como Skylines 3, en ella veremos como un virus amenaza en transformar a los ...
-      .bottom
-        span.etiqueta
-          i.icofont.icofont-folder.mr-1
-          | Ciencia ficción
-        a.btn.btn-primary.btn-block.mt-1.br-2(href="#") 
-          | Leer más
-          i.icofont.icofont-rounded-double-right.ml-1.icofont-1x
+mixin tarjetaPelicula(peliculas)
+  each pelicula in peliculas
+    .col-3.mb-2
+      .card
+        .card-body
+          img.w-100(src=`${pelicula.imagenUrl}` alt="")
+        .card-footer.hidden
+          .card-title.text-rojo= pelicula.titulo 
+          p #{pelicula.cortaDescripcion.slice(0, 200)} ... 
+          .bottom
+            span.etiqueta.text-rojo
+              i.icofont.icofont-folder.mr-1
+              | #{pelicula.fichaTecnica.genero[0]}
+            a.btn.btn-danger.btn-block.mt-1.br-2(href="#") 
+              | Leer más
+              i.icofont.icofont-rounded-double-right.ml-1.icofont-1x
           
           
       
