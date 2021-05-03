@@ -7,11 +7,11 @@ exports.paginaPrincipal = (req, res) => {
     const urlDB = path.join(__dirname, '../data/peliculas.json');
 
     readFile(urlDB, 'utf-8', (err, peliculas) => {
+      if(!peliculas) {
+        return res.render('index', { peliculas: []});
+      }
       peliculas = JSON.parse(peliculas);
-      // console.log(peliculas)
-      // Mandando a la vista
       res.render('index', { peliculas, loading: false });
-
     })
 
 }
