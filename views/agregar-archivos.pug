@@ -1,17 +1,68 @@
 extend layout
 block content
   
-  .row
-    form.col-12
+  .row.agregar-archivos
+    form.col-12(action="/api/v1/peliculas" method="POST")
       .row
         .col-6
-          h3 Datos generales
-          .form-group
-            label(for="titulo") Titulo
-            input.form-control(type="text" name="titulo")
-          .form-group
-            label(for="corta-descriptcion") Breve descriptción
-            input.form-control(type="text" name="corta-descriptcion")
+          .column
+            .col-12
+              h3 Datos generales
+              .form-group
+                label(for="titulo") Titulo
+                input.form-control(type="text" name="titulo")
+              .form-group
+                label(for="corta-descripccion") Breve descripcción
+                input.form-control(type="text" name="corta-descripcion")
+              .form-group
+                label(for="imagenUrl") Imagen url
+                input.form-control(type="text" name="imagenUrl")
+              .form-group
+                label(for="largaDescripcion") Descripcción completa
+                textarea.form-control(type="text" rows="5" name="largaDescripcion")
+            .col-12
+              h3 Descarga
+              .row
+                .col-4
+                  .form-group
+                    label(for="peso") Peso
+                    input.form-control(type="number" name="peso")
+                .col-4
+                  .form-group
+                    label(for="formato") Formato
+                    input.form-control(type="text" name="formato")
+                .col-4
+                  .form-group
+                    label(for="codec") Codec
+                    input.form-control(type="text" name="codec")
+                .col-4
+                  .form-group
+                    label(for="videoBitRate") Video Bit Rate
+                    input.form-control(type="number" name="videoBitRate")
+                .col-4
+                  .form-group
+                    label(for="audioPrincipal") Audio principal
+                    input.form-control(type="text" name="audioPrincipal")
+                .col-4
+                  .form-group
+                    label(for="audioSecundario") Audio secundario
+                    input.form-control(type="text" name="audioSecundario")
+                .col-4
+                  .form-group
+                    label(for="resolucion") Resolucion
+                    input.form-control(type="number" name="resolucion")
+                .col-4
+                  .form-group
+                    label(for="subtitulos") Subtitulos
+                    input.form-control(type="text" name="subtitulos")
+                .col-4
+                  .form-group
+                    label(for="duracion") Duracion
+                    input.form-control(type="number" name="duracion")
+                .col-12
+                  .form-group
+                    label(for="link") Enlace de descarga
+                    input.form-control(type="text" name="link")
         .col-6
           h3 Ficha técnica
           .form-group
@@ -23,11 +74,11 @@ block content
           .row
             .col-6
               .form-group
-                label(for="duracion") Duracion
-                input.form-control(type="number" name="duracion")
+                label(for="duracionFicha") Duracion Ficha
+                input.form-control(type="number" name="duracionFicha")
             .col-6
               .form-group
-                label(for="pais") Duracion
+                label(for="pais") Pais
                 select.form-control(name="pais")
                   option Republica Dominicana
                   option Estados Unidos
@@ -44,7 +95,17 @@ block content
                   input.form-control(type="text" name="actores")
                 button(style="height: 37px") 
                   i.icofont.icofont-plus
-              
+            .col-6
+              .form-group
+                label(for="genero") Genero
+                input.form-control(type="text" name="genero")
+            .col-6
+              .form-group
+                label(for="tematica") Tematica
+                input.form-control(type="text" name="tematica")
+        .col-12
+          .form-group.btn
+            button.btn.btn-danger(type="submit") Agregar
                 
         
     

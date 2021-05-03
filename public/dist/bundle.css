@@ -14488,13 +14488,13 @@ body {
     cursor: pointer; }
 
 .header__nav nav {
-  border-radius: 10px; }
+  border-radius: 5px; }
 
 .header__banner .container {
   background-image: url(../img/banner/banner-01.png);
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   height: 250px;
@@ -14528,5 +14528,18 @@ body {
       font-weight: 700; }
     .terjetas-de-peliculas .card .card-footer .card-title {
       font-size: 1rem; }
+
+.agregar-archivos {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 30px; }
+  .agregar-archivos form .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ce1212 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #ce120094 !important; }
+  .agregar-archivos form .form-group.btn {
+    padding: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

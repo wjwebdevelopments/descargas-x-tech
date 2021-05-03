@@ -11,10 +11,14 @@ exports.obtenerPeliculas = (req, res) => {
 }
 
 exports.crearPelicula = (req, res) => {
-  const pelicula = new Pelicula(req.body);
-  pelicula.save()
-    .then(pelicula => {
-      console.log(pelicula);
-      res.send('Pelicula agregada!');
-    });
+
+  console.log(res.body)
+  res.redirect('/')
+
+  // const pelicula = new Pelicula(req.body);
+  // pelicula.save()
+  //   .then(pelicula => {
+  //     console.log(pelicula);
+  //     res.send('Pelicula agregada!');
+  //   });
 }
